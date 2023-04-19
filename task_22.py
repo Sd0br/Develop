@@ -2,14 +2,16 @@
 #Пользователь вводит 2 числа. n — кол-во элементов первого множества. m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
 n = int(input("Введите число n: "))
 m = int(input("Введите число m: "))
-set_1 = set()
-set_2 = set()
+list_1 = list()
+list_2 = list()
 for i in range(n):
-    set_1.add(int(input("Введите число: ")))
+    list_1.append(int(input("Введите число: ")))
 for i in range(m):
-    set_2.add(int(input("Введите число: ")))
-print(set_1)
-print(set_2)
+    list_2.append(int(input("Введите число: ")))
+print(list_1)
+print(list_2)
+set_1 = set(list_1)
+set_2 = set(list_2)
 set_3 = set_1.union(set_2)
 print(set_3)
 
