@@ -12,7 +12,7 @@ print(list_1)
 print(list_2)
 set_1 = set(list_1)
 set_2 = set(list_2)
-set_3 = set_1.union(set_2)
+set_3 = set_1.intersection(set_2)
 print(set_3)
 
 
