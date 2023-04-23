@@ -1,15 +1,10 @@
-maxim = 0
-count = 0
-amount_days = int(input("Введите количество дней "))
-for i in range(amount_days):
-    temp = int(input(f"Введите температуру в {i+1} день "))
-    if temp > 0:
-        count += 1
-        if count > maxim:
-            maxim = count
+def fib(n):
+    if n < 2:
+        return n
     else:
-        count = 0
+        return fib(n-1) + fib(n-2)
 
-print(f"Максимальная оттепель длилась {maxim} дней")-4
+for i in range(16):
+    print(i, fib(i))
 
 
